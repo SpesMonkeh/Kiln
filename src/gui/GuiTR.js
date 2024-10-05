@@ -5,6 +5,7 @@ import japanese from 'gui/tr/japanese';
 import korean from 'gui/tr/korean';
 import russian from 'gui/tr/russian';
 import turkish from 'gui/tr/turkish';
+import DA_dk from 'gui/tr/danish'; 
 import swedish from 'gui/tr/swedish';
 import french from 'gui/tr/french';
 import german from 'gui/tr/german';
@@ -27,8 +28,9 @@ GuiTR.languages = {
   '한국어': korean,
   'русский': russian,
   'turkish': turkish,
+  'dansk': DA_dk,
   'svenska': swedish,
-  'français': french,
+  'francais': french,
   'deutsch': german,
   'italiano': italian
 };
@@ -43,6 +45,7 @@ else if (language === 'tr') GuiTR.select = 'turkish';
 else if (language === 'sv') GuiTR.select = 'svenska';
 else if (language === 'fr') GuiTR.select = 'français';
 else if (language === 'de') GuiTR.select = 'deutsch';
+else if (language === 'dk') GuiTR.select = 'dansk';
 
 switch (getOptionsURL().language) {
 case 'english':
@@ -62,6 +65,9 @@ case 'russian':
   break;
 case 'turkish':
   GuiTR.select = 'turkish';
+  break;
+case 'danish':
+  GuiTR.select = 'danish';
   break;
 case 'swedish':
   GuiTR.select = 'svenska';
